@@ -4,7 +4,11 @@
   "description": "Parse Migrate are Parse’s way of propagating changes you make to your classes (adding a field, deleting a class, etc.) into your schema. They’re designed to be mostly automatic, but you’ll need to know when to make migrations, when to run them, and the common problems you might run into.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/concoreio/parse-migrate.git"
   },
   "keywords": [
     "cli",
@@ -12,5 +16,8 @@
     "migration"
   ],
   "author": "David Ruiz <david@concore.io>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
 }
